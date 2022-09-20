@@ -59,7 +59,6 @@ export type PlasmicHomepage__OverridesType = {
   header?: p.Flex<typeof Header>;
   freeBox?: p.Flex<"div">;
   section?: p.Flex<"section">;
-  reveal?: p.Flex<typeof Reveal>;
   img?: p.Flex<typeof p.PlasmicImg>;
   text?: p.Flex<"div">;
   footer?: p.Flex<typeof Footer>;
@@ -137,9 +136,10 @@ function PlasmicHomepage__RenderFunc(props: {
                 className={classNames(projectcss.all, sty.section)}
               >
                 <Reveal
-                  data-plasmic-name={"reveal"}
-                  data-plasmic-override={overrides.reveal}
-                  className={classNames("__wab_instance", sty.reveal)}
+                  className={classNames("__wab_instance", sty.reveal__iQsvL)}
+                  direction={"down" as const}
+                  duration={5000 as const}
+                  effect={"fade" as const}
                   triggerOnce={true}
                 >
                   <p.PlasmicImg
@@ -161,7 +161,17 @@ function PlasmicHomepage__RenderFunc(props: {
                       aspectRatio: undefined
                     }}
                   />
+                </Reveal>
 
+                <Reveal
+                  big={true}
+                  cascade={false}
+                  className={classNames("__wab_instance", sty.reveal__sppnE)}
+                  delay={4000 as const}
+                  duration={2000 as const}
+                  effect={"fade" as const}
+                  triggerOnce={true}
+                >
                   <div
                     data-plasmic-name={"text"}
                     data-plasmic-override={overrides.text}
@@ -190,20 +200,10 @@ function PlasmicHomepage__RenderFunc(props: {
 }
 
 const PlasmicDescendants = {
-  root: [
-    "root",
-    "header",
-    "freeBox",
-    "section",
-    "reveal",
-    "img",
-    "text",
-    "footer"
-  ],
+  root: ["root", "header", "freeBox", "section", "img", "text", "footer"],
   header: ["header"],
-  freeBox: ["freeBox", "section", "reveal", "img", "text"],
-  section: ["section", "reveal", "img", "text"],
-  reveal: ["reveal", "img", "text"],
+  freeBox: ["freeBox", "section", "img", "text"],
+  section: ["section", "img", "text"],
   img: ["img"],
   text: ["text"],
   footer: ["footer"]
@@ -216,7 +216,6 @@ type NodeDefaultElementType = {
   header: typeof Header;
   freeBox: "div";
   section: "section";
-  reveal: typeof Reveal;
   img: typeof p.PlasmicImg;
   text: "div";
   footer: typeof Footer;
@@ -286,7 +285,6 @@ export const PlasmicHomepage = Object.assign(
     header: makeNodeComponent("header"),
     freeBox: makeNodeComponent("freeBox"),
     section: makeNodeComponent("section"),
-    reveal: makeNodeComponent("reveal"),
     img: makeNodeComponent("img"),
     text: makeNodeComponent("text"),
     footer: makeNodeComponent("footer"),
@@ -297,7 +295,7 @@ export const PlasmicHomepage = Object.assign(
 
     // Page metadata
     pageMetadata: {
-      title: "",
+      title: "Building Web3 since 2013.",
       description: "",
       ogImageSrc:
         "https://site-assets.plasmic.app/4a3f4516bad734748f72a69f6ae35d66.png",

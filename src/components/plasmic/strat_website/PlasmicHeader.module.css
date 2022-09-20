@@ -50,7 +50,7 @@
   max-width: 100%;
   min-width: 0;
 }
-.text__kieFn {
+.link__kieFn {
   height: auto;
   max-width: 800px;
   color: var(--token-yJJFJqlyc1SLNf);
@@ -94,7 +94,7 @@
   max-width: 100%;
   min-width: 0;
 }
-.text__deb0L {
+.link__deb0L {
   height: auto;
   max-width: 800px;
   color: var(--token-yJJFJqlyc1SLNf);
@@ -112,7 +112,7 @@
   width: 1em;
   height: 1em;
 }
-.text__bvpvG {
+.text {
   font-size: 12px;
 }
 .svg__y7Xxe {

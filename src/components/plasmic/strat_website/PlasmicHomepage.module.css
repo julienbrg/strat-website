@@ -81,7 +81,7 @@
     margin-top: 0px;
   }
 }
-.reveal:global(.__wab_instance) {
+.reveal__iQsvL:global(.__wab_instance) {
   max-width: 100%;
   object-fit: cover;
   position: relative;
@@ -99,6 +99,12 @@
 .img > :global(.__wab_img-spacer) > img {
   object-fit: cover;
 }
+.reveal__sppnE:global(.__wab_instance) {
+  max-width: 100%;
+  object-fit: cover;
+  position: relative;
+  transform-origin: -110% 50%;
+}
 .text {
   position: relative;
   width: 100%;
@@ -107,6 +113,7 @@
   color: var(--token-yJJFJqlyc1SLNf);
   font-size: 48px;
   padding-top: 40px;
+  text-align: center;
   min-width: 0;
 }
 @media (min-width: 0px) and (max-width: 768px) {

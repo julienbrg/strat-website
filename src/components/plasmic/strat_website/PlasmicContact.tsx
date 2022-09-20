@@ -56,7 +56,7 @@ export type PlasmicContact__OverridesType = {
   header?: p.Flex<typeof Header>;
   freeBox?: p.Flex<"div">;
   section?: p.Flex<"section">;
-  text?: p.Flex<"div">;
+  ul?: p.Flex<"ul">;
   footer?: p.Flex<typeof Footer>;
 };
 
@@ -132,16 +132,66 @@ function PlasmicContact__RenderFunc(props: {
                 className={classNames(projectcss.all, sty.section)}
               >
                 <div
-                  data-plasmic-name={"text"}
-                  data-plasmic-override={overrides.text}
                   className={classNames(
                     projectcss.all,
                     projectcss.__wab_text,
-                    sty.text
+                    sty.text___8BlHw
                   )}
                 >
                   <React.Fragment>
-                    <React.Fragment>{"Email: "}</React.Fragment>
+                    <React.Fragment>
+                      {"Contact me if you need to: \n\n"}
+                    </React.Fragment>
+                    {
+                      <ul
+                        data-plasmic-name={"ul"}
+                        data-plasmic-override={overrides.ul}
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.ul,
+                          sty.ul
+                        )}
+                      >
+                        <li
+                          className={classNames(
+                            projectcss.all,
+                            projectcss.li,
+                            projectcss.__wab_text,
+                            sty.li__kw4W
+                          )}
+                        >
+                          {
+                            "Audit the design and security of your smart contracts.\n"
+                          }
+                        </li>
+
+                        <li
+                          className={classNames(
+                            projectcss.all,
+                            projectcss.li,
+                            projectcss.__wab_text,
+                            sty.li__i2U3O
+                          )}
+                        >
+                          {
+                            "Train your team on blockchain and decentralisation.\n"
+                          }
+                        </li>
+                      </ul>
+                    }
+                    <React.Fragment>{""}</React.Fragment>
+                  </React.Fragment>
+                </div>
+
+                <div
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.__wab_text,
+                    sty.text__aIpOg
+                  )}
+                >
+                  <React.Fragment>
+                    <React.Fragment>{"Schedule a call: "}</React.Fragment>
                     {
                       <a
                         className={classNames(
@@ -149,11 +199,13 @@ function PlasmicContact__RenderFunc(props: {
                           projectcss.a,
                           projectcss.__wab_text,
                           projectcss.plasmic_default__inline,
-                          sty.link__ekcBr
+                          sty.link__y1XUe
                         )}
-                        href={"https://mailto:julien@strat.cc" as const}
+                        href={
+                          "https://meetings-eu1.hubspot.com/julien-beranger " as const
+                        }
                       >
-                        {"julien@strat.cc"}
+                        {"https://meetings-eu1.hubspot.com/julien-beranger"}
                       </a>
                     }
                     <React.Fragment>{"\nElement: "}</React.Fragment>
@@ -164,13 +216,14 @@ function PlasmicContact__RenderFunc(props: {
                           projectcss.a,
                           projectcss.__wab_text,
                           projectcss.plasmic_default__inline,
-                          sty.link__ncLS
+                          sty.link__qOJso
                         )}
                         href={
-                          "https://riot.im/app/#/room/#strat:matrix.org" as const
+                          "https://matrix.to/#/@julienbrg:matrix.org" as const
                         }
+                        target={"_blank" as const}
                       >
-                        {"https://riot.im/app/#/room/#strat:matrix.org"}
+                        {"https://matrix.to/#/@julienbrg:matrix.org"}
                       </a>
                     }
                     <React.Fragment>{"\nTelegram: "}</React.Fragment>
@@ -181,9 +234,10 @@ function PlasmicContact__RenderFunc(props: {
                           projectcss.a,
                           projectcss.__wab_text,
                           projectcss.plasmic_default__inline,
-                          sty.link__cah1I
+                          sty.link___6Ex4I
                         )}
                         href={"https://t.me/julienbrg" as const}
+                        target={"_blank" as const}
                       >
                         {"https://t.me/julienbrg"}
                       </a>
@@ -196,11 +250,12 @@ function PlasmicContact__RenderFunc(props: {
                           projectcss.a,
                           projectcss.__wab_text,
                           projectcss.plasmic_default__inline,
-                          sty.link__r5Ccx
+                          sty.link__waHv
                         )}
                         href={
                           "https://www.linkedin.com/in/julienberanger/" as const
                         }
+                        target={"_blank" as const}
                       >
                         {"https://www.linkedin.com/in/julienberanger/"}
                       </a>
@@ -213,11 +268,27 @@ function PlasmicContact__RenderFunc(props: {
                           projectcss.a,
                           projectcss.__wab_text,
                           projectcss.plasmic_default__inline,
-                          sty.link__p8AAe
+                          sty.link__x3KQ3
                         )}
                         href={"https://twitter.com/julienbrg" as const}
+                        target={"_blank" as const}
                       >
                         {"https://twitter.com/julienbrg"}
+                      </a>
+                    }
+                    <React.Fragment>{"\nEmail: "}</React.Fragment>
+                    {
+                      <a
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.a,
+                          projectcss.__wab_text,
+                          projectcss.plasmic_default__inline,
+                          sty.link__i5Dx6
+                        )}
+                        href={"https://mailto:julien@strat.cc" as const}
+                      >
+                        {"julien@strat.cc"}
                       </a>
                     }
                     <React.Fragment>{"\nGithub: "}</React.Fragment>
@@ -228,9 +299,10 @@ function PlasmicContact__RenderFunc(props: {
                           projectcss.a,
                           projectcss.__wab_text,
                           projectcss.plasmic_default__inline,
-                          sty.link__rX4TX
+                          sty.link__jxGop
                         )}
                         href={"https://github.com/julienbrg" as const}
+                        target={"_blank" as const}
                       >
                         {"https://github.com/julienbrg"}
                       </a>
@@ -243,9 +315,9 @@ function PlasmicContact__RenderFunc(props: {
                           projectcss.a,
                           projectcss.__wab_text,
                           projectcss.plasmic_default__inline,
-                          sty.link__kkukW
+                          sty.link__x5Hb
                         )}
-                        href={"julienberanger.com" as const}
+                        href={"https://julienberanger.com" as const}
                       >
                         {"julienberanger.com"}
                       </a>
@@ -269,11 +341,11 @@ function PlasmicContact__RenderFunc(props: {
 }
 
 const PlasmicDescendants = {
-  root: ["root", "header", "freeBox", "section", "text", "footer"],
+  root: ["root", "header", "freeBox", "section", "ul", "footer"],
   header: ["header"],
-  freeBox: ["freeBox", "section", "text"],
-  section: ["section", "text"],
-  text: ["text"],
+  freeBox: ["freeBox", "section", "ul"],
+  section: ["section", "ul"],
+  ul: ["ul"],
   footer: ["footer"]
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
@@ -284,7 +356,7 @@ type NodeDefaultElementType = {
   header: typeof Header;
   freeBox: "div";
   section: "section";
-  text: "div";
+  ul: "ul";
   footer: typeof Footer;
 };
 
@@ -352,7 +424,7 @@ export const PlasmicContact = Object.assign(
     header: makeNodeComponent("header"),
     freeBox: makeNodeComponent("freeBox"),
     section: makeNodeComponent("section"),
-    text: makeNodeComponent("text"),
+    ul: makeNodeComponent("ul"),
     footer: makeNodeComponent("footer"),
 
     // Metadata about props expected for PlasmicContact

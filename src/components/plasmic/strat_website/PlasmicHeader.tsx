@@ -54,6 +54,7 @@ export const PlasmicHeader__ArgProps = new Array<ArgPropType>();
 export type PlasmicHeader__OverridesType = {
   root?: p.Flex<"div">;
   login?: p.Flex<typeof Button>;
+  text?: p.Flex<"div">;
 };
 
 export interface DefaultHeaderProps {
@@ -107,15 +108,17 @@ function PlasmicHeader__RenderFunc(props: {
       >
         {true ? (
           <div className={classNames(projectcss.all, sty.freeBox___1U5N2)}>
-            <div
+            <a
               className={classNames(
                 projectcss.all,
+                projectcss.a,
                 projectcss.__wab_text,
-                sty.text__kieFn
+                sty.link__kieFn
               )}
+              href={`/`}
             >
               {"Strat"}
-            </div>
+            </a>
           </div>
         ) : null}
       </p.Stack>
@@ -127,15 +130,17 @@ function PlasmicHeader__RenderFunc(props: {
       >
         {true ? (
           <div className={classNames(projectcss.all, sty.freeBox__t6Ld)}>
-            <div
+            <a
               className={classNames(
                 projectcss.all,
+                projectcss.a,
                 projectcss.__wab_text,
-                sty.text__deb0L
+                sty.link__deb0L
               )}
+              href={`/contact`}
             >
               {"Contact"}
-            </div>
+            </a>
           </div>
         ) : null}
 
@@ -145,10 +150,12 @@ function PlasmicHeader__RenderFunc(props: {
           className={classNames("__wab_instance", sty.login)}
         >
           <div
+            data-plasmic-name={"text"}
+            data-plasmic-override={overrides.text}
             className={classNames(
               projectcss.all,
               projectcss.__wab_text,
-              sty.text__bvpvG
+              sty.text
             )}
           >
             {"Login"}
@@ -160,8 +167,9 @@ function PlasmicHeader__RenderFunc(props: {
 }
 
 const PlasmicDescendants = {
-  root: ["root", "login"],
-  login: ["login"]
+  root: ["root", "login", "text"],
+  login: ["login", "text"],
+  text: ["text"]
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
 type DescendantsType<T extends NodeNameType> =
@@ -169,6 +177,7 @@ type DescendantsType<T extends NodeNameType> =
 type NodeDefaultElementType = {
   root: "div";
   login: typeof Button;
+  text: "div";
 };
 
 type ReservedPropsType = "variants" | "args" | "overrides";
@@ -233,6 +242,7 @@ export const PlasmicHeader = Object.assign(
   {
     // Helper components rendering sub-elements
     login: makeNodeComponent("login"),
+    text: makeNodeComponent("text"),
 
     // Metadata about props expected for PlasmicHeader
     internalVariantProps: PlasmicHeader__VariantProps,

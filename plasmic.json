@@ -1,0 +1,170 @@
+{
+  "platform": "react",
+  "code": {
+    "lang": "ts",
+    "scheme": "blackbox",
+    "reactRuntime": "classic"
+  },
+  "style": {
+    "scheme": "css-modules",
+    "defaultStyleCssFilePath": "plasmic/plasmic__default_style.css"
+  },
+  "images": {
+    "scheme": "files",
+    "publicDir": "../../public",
+    "publicUrlPrefix": "/static/"
+  },
+  "tokens": {
+    "scheme": "theo",
+    "tokensFilePath": "plasmic-tokens.theo.json"
+  },
+  "srcDir": "src/components",
+  "defaultPlasmicDir": "./plasmic",
+  "projects": [
+    {
+      "projectId": "58GpZjZCWTaJ8AUhpCwt2K",
+      "projectApiToken": "DIkcfhBwjMCJSjcxfBkMuy4NImyytq5EWylxVcpS9t9EpdhnPQuBgBGxmk00AB1itMFa1KXTxOKnrjN2PN9nlA",
+      "projectName": "react-awesome-reveal",
+      "version": "3.3.0",
+      "cssFilePath": "plasmic/react_awesome_reveal/plasmic_react_awesome_reveal.module.css",
+      "components": [],
+      "icons": [],
+      "images": [],
+      "indirect": true,
+      "globalContextsFilePath": "",
+      "codeComponents": [
+        {
+          "id": "R6s1FdhksG",
+          "name": "Reveal",
+          "componentImportPath": "@plasmicpkgs/react-awesome-reveal"
+        }
+      ]
+    },
+    {
+      "projectId": "f1ne6MHavnkqSCsUCdyQTF",
+      "projectApiToken": "uTjB1L9Bi15b5ACRtvZ4z8XXjdANeIJlMfbspPGzTCsbAtmdk2HboIA6Ln1b8TkNMFmIIpSfVoG1uRr6cxA",
+      "projectName": "strat-website",
+      "version": "latest",
+      "cssFilePath": "plasmic/strat_website/plasmic_strat_website.module.css",
+      "components": [
+        {
+          "id": "FCBtZ9zyJc7r",
+          "name": "Homepage",
+          "type": "managed",
+          "projectId": "f1ne6MHavnkqSCsUCdyQTF",
+          "renderModuleFilePath": "plasmic/strat_website/PlasmicHomepage.tsx",
+          "importSpec": {
+            "modulePath": "Homepage.tsx"
+          },
+          "cssFilePath": "plasmic/strat_website/PlasmicHomepage.module.css",
+          "scheme": "blackbox",
+          "componentType": "page"
+        },
+        {
+          "id": "9iKKdEBBrUEl-",
+          "name": "Header",
+          "type": "managed",
+          "projectId": "f1ne6MHavnkqSCsUCdyQTF",
+          "renderModuleFilePath": "plasmic/strat_website/PlasmicHeader.tsx",
+          "importSpec": {
+            "modulePath": "Header.tsx"
+          },
+          "cssFilePath": "plasmic/strat_website/PlasmicHeader.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
+        },
+        {
+          "id": "818xGXbf8YPnY",
+          "name": "Footer",
+          "type": "managed",
+          "projectId": "f1ne6MHavnkqSCsUCdyQTF",
+          "renderModuleFilePath": "plasmic/strat_website/PlasmicFooter.tsx",
+          "importSpec": {
+            "modulePath": "Footer.tsx"
+          },
+          "cssFilePath": "plasmic/strat_website/PlasmicFooter.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
+        },
+        {
+          "id": "gQkvUEZjQIStN",
+          "name": "Contact",
+          "type": "managed",
+          "projectId": "f1ne6MHavnkqSCsUCdyQTF",
+          "renderModuleFilePath": "plasmic/strat_website/PlasmicContact.tsx",
+          "importSpec": {
+            "modulePath": "Contact.tsx"
+          },
+          "cssFilePath": "plasmic/strat_website/PlasmicContact.module.css",
+          "scheme": "blackbox",
+          "componentType": "page"
+        },
+        {
+          "id": "mQ6uqbazsYsZ4",
+          "name": "Button",
+          "type": "managed",
+          "projectId": "f1ne6MHavnkqSCsUCdyQTF",
+          "renderModuleFilePath": "plasmic/strat_website/PlasmicButton.tsx",
+          "importSpec": {
+            "modulePath": "Button.tsx"
+          },
+          "cssFilePath": "plasmic/strat_website/PlasmicButton.module.css",
+          "scheme": "blackbox",
+          "componentType": "component",
+          "plumeType": "button"
+        }
+      ],
+      "icons": [
+        {
+          "id": "J-sgqBUdDkTYr6",
+          "name": "ChecksvgIcon",
+          "moduleFilePath": "plasmic/strat_website/icons/PlasmicIcon__Checksvg.tsx"
+        },
+        {
+          "id": "3ar9r9vRElYiRQ",
+          "name": "IconIcon",
+          "moduleFilePath": "plasmic/strat_website/icons/PlasmicIcon__Icon.tsx"
+        }
+      ],
+      "images": [
+        {
+          "id": "BshLJUFWS",
+          "name": "strat-logo-white.png",
+          "filePath": "plasmic/strat_website/images/stratLogoWhitepng.png"
+        },
+        {
+          "id": "3Hrfti5F_",
+          "name": "favicon.png",
+          "filePath": "plasmic/strat_website/images/faviconpng.png"
+        }
+      ],
+      "indirect": false,
+      "globalContextsFilePath": "",
+      "codeComponents": [
+        {
+          "id": "HuNBvkg7il2Wh",
+          "name": "PlasmicHead",
+          "componentImportPath": "@plasmicapp/react-web"
+        },
+        {
+          "id": "4q5pd7Fv1A49m",
+          "name": "Fetcher",
+          "componentImportPath": "@plasmicapp/data-sources"
+        }
+      ]
+    }
+  ],
+  "globalVariants": {
+    "variantGroups": [
+      {
+        "id": "ucUMRK61TLu2R",
+        "name": "Screen",
+        "projectId": "f1ne6MHavnkqSCsUCdyQTF",
+        "contextFilePath": "plasmic/strat_website/PlasmicGlobalVariant__Screen.tsx"
+      }
+    ]
+  },
+  "wrapPagesWithGlobalContexts": true,
+  "cliVersion": "0.1.186",
+  "$schema": "https://unpkg.com/@plasmicapp/cli@0.1.186/dist/plasmic.schema.json"
+}

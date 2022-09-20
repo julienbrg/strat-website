@@ -160,9 +160,42 @@ function PlasmicContact__RenderFunc(props: {
                             sty.li__kw4W
                           )}
                         >
-                          {
-                            "Audit the design and security of your smart contracts.\n"
-                          }
+                          <React.Fragment>
+                            <span
+                              className={
+                                "plasmic_default__all plasmic_default__span"
+                              }
+                              style={{ fontWeight: 700 }}
+                            >
+                              {"Audit"}
+                            </span>
+                            <React.Fragment>
+                              {" the security of your smart contracts.\n"}
+                            </React.Fragment>
+                          </React.Fragment>
+                        </li>
+
+                        <li
+                          className={classNames(
+                            projectcss.all,
+                            projectcss.li,
+                            projectcss.__wab_text,
+                            sty.li___02Slk
+                          )}
+                        >
+                          <React.Fragment>
+                            <span
+                              className={
+                                "plasmic_default__all plasmic_default__span"
+                              }
+                              style={{ fontWeight: 700 }}
+                            >
+                              {"Build "}
+                            </span>
+                            <React.Fragment>
+                              {"a cool Web3 app (DeFi, DAO, NFT, ...) "}
+                            </React.Fragment>
+                          </React.Fragment>
                         </li>
 
                         <li
@@ -173,9 +206,67 @@ function PlasmicContact__RenderFunc(props: {
                             sty.li__i2U3O
                           )}
                         >
-                          {
-                            "Train your team on blockchain and decentralisation.\n"
-                          }
+                          <React.Fragment>
+                            <span
+                              className={
+                                "plasmic_default__all plasmic_default__span"
+                              }
+                              style={{ fontWeight: 700 }}
+                            >
+                              {"Train"}
+                            </span>
+                            <React.Fragment>
+                              {
+                                " your team on blockchain and decentralization.\n"
+                              }
+                            </React.Fragment>
+                          </React.Fragment>
+                        </li>
+
+                        <li
+                          className={classNames(
+                            projectcss.all,
+                            projectcss.li,
+                            projectcss.__wab_text,
+                            sty.li__n6Jrj
+                          )}
+                        >
+                          <React.Fragment>
+                            <span
+                              className={
+                                "plasmic_default__all plasmic_default__span"
+                              }
+                              style={{ fontWeight: 700 }}
+                            >
+                              {"Present"}
+                            </span>
+                            <React.Fragment>
+                              {" your project to crypto investors."}
+                            </React.Fragment>
+                          </React.Fragment>
+                        </li>
+
+                        <li
+                          className={classNames(
+                            projectcss.all,
+                            projectcss.li,
+                            projectcss.__wab_text,
+                            sty.li__xmMZr
+                          )}
+                        >
+                          <React.Fragment>
+                            <span
+                              className={
+                                "plasmic_default__all plasmic_default__span"
+                              }
+                              style={{ fontWeight: 700 }}
+                            >
+                              {"Design"}
+                            </span>
+                            <React.Fragment>
+                              {" a relevant marketing strategy."}
+                            </React.Fragment>
+                          </React.Fragment>
                         </li>
                       </ul>
                     }

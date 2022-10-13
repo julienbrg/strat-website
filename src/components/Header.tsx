@@ -6,7 +6,7 @@ import {
   DefaultHeaderProps
 } from "./plasmic/strat_website/PlasmicHeader";
 import { HTMLElementRefOf } from "@plasmicapp/react-web";
-import { useGlobalContext } from './Web3Context';
+import { useGlobalContext } from '../web3/Web3Context';
 import { Web3Auth } from "@web3auth/web3auth";
 import { CHAIN_NAMESPACES/*, SafeEventEmitterProvider*/ } from "@web3auth/base";
 import RPC from "../web3/ethersRPC";
@@ -275,6 +275,13 @@ function Header_(props: HeaderProps, ref: HTMLElementRefOf<"div">) {
       onClick: () => toggle()
     } as any
   }}
+
+  // loginButton={{
+  //   props: {
+  //     children: (!provider ? "Login" : "Logout"),
+  //     onClick: () => toggle()
+  //   } as any
+  // }}
   
   
   />;

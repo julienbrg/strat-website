@@ -113,6 +113,19 @@
           "scheme": "blackbox",
           "componentType": "component",
           "plumeType": "button"
+        },
+        {
+          "id": "a5L6WWYHdIq",
+          "name": "Merge",
+          "type": "managed",
+          "projectId": "f1ne6MHavnkqSCsUCdyQTF",
+          "renderModuleFilePath": "plasmic/strat_website/PlasmicMerge.tsx",
+          "importSpec": {
+            "modulePath": "Merge.tsx"
+          },
+          "cssFilePath": "plasmic/strat_website/PlasmicMerge.module.css",
+          "scheme": "blackbox",
+          "componentType": "page"
         }
       ],
       "icons": [

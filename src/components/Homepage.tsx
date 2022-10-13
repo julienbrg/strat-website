@@ -9,8 +9,8 @@ import { HTMLElementRefOf } from "@plasmicapp/react-web";
 import { Web3Auth } from "@web3auth/web3auth";
 import { CHAIN_NAMESPACES, SafeEventEmitterProvider } from "@web3auth/base";
 import RPC from "../web3/ethersRPC";
-import "../App.css";
-import { useGlobalContext } from './Web3Context';
+import "../web3/App.css";
+import { useGlobalContext } from '../web3/Web3Context';
 
 export interface HomepageProps extends DefaultHomepageProps {}
 

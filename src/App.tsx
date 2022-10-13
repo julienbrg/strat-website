@@ -4,7 +4,7 @@ import Contact from "./components/Contact";
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
 import { useState } from "react";
-import { Web3Context } from './components/Web3Context'
+import { Web3Context } from './web3/Web3Context'
 import { Web3Auth } from "@web3auth/web3auth";
 import { SafeEventEmitterProvider } from "@web3auth/base";
 

@@ -13,9 +13,9 @@
   padding: 100px 8px 8px;
 }
 .freeBox__f9Zug {
-  flex-direction: row;
   display: flex;
   position: relative;
+  flex-direction: row;
   height: auto;
   width: 100%;
   min-width: 0;
@@ -23,8 +23,8 @@
 }
 .freeBox__f9Zug > :global(.__wab_flex-container) {
   flex-direction: row;
-  justify-content: flex-start;
   align-items: center;
+  justify-content: flex-start;
   min-width: 0;
   margin-left: calc(0px - 0px);
   width: calc(100% + 0px);

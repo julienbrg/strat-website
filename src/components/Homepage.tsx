@@ -33,7 +33,6 @@ function Homepage_(props: HomepageProps, ref: HTMLElementRefOf<"div">) {
     pfp, setPfp
   } = useGlobalContext()
 
-
   return <PlasmicHomepage root={{ ref }} {...props} />;
 }
 

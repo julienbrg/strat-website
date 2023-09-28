@@ -40,15 +40,15 @@
   }
 }
 .section {
-  flex-direction: column;
   display: flex;
+  flex-direction: column;
   width: 60%;
   height: auto;
 }
 .section > :global(.__wab_flex-container) {
   flex-direction: column;
-  justify-content: flex-start;
   align-items: center;
+  justify-content: flex-start;
   margin-top: calc(0px - 16px);
   height: calc(100% + 16px);
 }
